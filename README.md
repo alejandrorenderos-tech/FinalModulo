@@ -52,10 +52,6 @@ El formulario es una **demostración visual**. GitHub Pages sirve archivos está
 
 Los atributos de validación HTML ayudan al navegador a detectar entradas incompletas o con formato incorrecto, pero no son una medida de seguridad ni sustituyen la validación del servidor. El atributo `accept` orienta el selector de archivos, pero no garantiza la seguridad del archivo.
 
-## GitHub y publicación
-
-La guía con los pasos para inicializar Git, registrar commits, conectar el repositorio remoto, publicar la rama `main` y activar GitHub Pages está en [`GITHUB-PAGES.md`](./GITHUB-PAGES.md).
-
 ## Tecnologías
 
 - HTML5
