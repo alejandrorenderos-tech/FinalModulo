@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; object-src 'none'; base-uri 'self'">
+  <meta name="description" content="Formulario de contacto para conversar sobre ideas y proyectos.">
+  <meta name="theme-color" content="#101815">
+  <title>Contacto | Portafolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Portafolio, inicio"><span class="brand__mark" aria-hidden="true">A</span><span class="brand__name">ale<span class="brand__dot">.</span></span></a>
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a class="site-nav__link" href="index.html">Inicio</a>
+      <a class="site-nav__link" href="acerca.html">Acerca de</a>
+      <a class="site-nav__link" href="proyectos.html">Proyectos</a>
+      <a class="site-nav__link site-nav__link--contact site-nav__link--active" href="contacto.html" aria-current="page">Contacto <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="contenido" class="page-shell">
+    <section class="page-heading" aria-labelledby="page-title">
+      <p class="eyebrow">UNA CONVERSACIÓN PUEDE SER EL INICIO <span class="text-accent">/ 04</span></p>
+      <h1 id="page-title">Hablemos de<br><span class="text-accent">tu próxima idea.</span></h1>
+      <p class="page-heading__lead">Cuéntame un poco sobre lo que tienes en mente. Completa el formulario de demostración o escríbeme directamente.</p>
+    </section>
+
+    <section class="contact-layout" aria-label="Formulario e información de contacto">
+      <aside class="contact-aside">
+        <p class="eyebrow">ENCUÉNTRAME</p>
+        <h2>Siempre abierto<br>a buenas ideas.</h2>
+        <p>Este portafolio es una muestra académica. Puedes sustituir estos datos por tus canales de contacto reales.</p>
+        <a class="contact-email" href="mailto:hola@tudominio.com">hola@tudominio.com <span aria-hidden="true">↗</span></a>
+        <div class="contact-aside__detail"><span class="fact-label">DISPONIBILIDAD</span><strong>Proyectos y colaboraciones</strong></div>
+        <div class="contact-aside__detail"><span class="fact-label">RESPUESTA</span><strong>Usualmente en 1–2 días</strong></div>
+      </aside>
+
+      <form class="contact-form" action="#" method="get">
+        <div class="form-heading"><p class="eyebrow">FORMULARIO DE DEMOSTRACIÓN</p><span class="form-required">* Obligatorio</span></div>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="nombre">Nombre completo <span aria-hidden="true">*</span></label>
+            <input id="nombre" type="text" autocomplete="name" required minlength="2" maxlength="80" placeholder="Alejandro Renderos">
+          </div>
+          <div class="form-field">
+            <label for="correo">Correo electrónico <span aria-hidden="true">*</span></label>
+            <input id="correo" type="email" autocomplete="email" required maxlength="120" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="form-field form-field--full">
+            <label for="tema">¿Sobre qué te gustaría conversar?</label>
+            <select id="tema" required>
+              <option value="" selected disabled>Selecciona un tema</option>
+              <option value="proyecto">Un proyecto web</option>
+              <option value="colaboracion">Una colaboración</option>
+              <option value="consulta">Una consulta</option>
+              <option value="otro">Otro tema</option>
+            </select>
+          </div>
+          <fieldset class="form-field form-field--full choice-group">
+            <legend>¿Cómo prefieres que te contacte?</legend>
+            <div class="choice-options">
+              <label class="choice"><input type="radio" name="preferencia" value="correo" checked><span>Por correo</span></label>
+              <label class="choice"><input type="radio" name="preferencia" value="reunion"><span>Coordinar una reunión</span></label>
+            </div>
+          </fieldset>
+          <div class="form-field form-field--full">
+            <label for="mensaje">Cuéntame más <span aria-hidden="true">*</span></label>
+            <textarea id="mensaje" rows="5" required minlength="10" maxlength="1000" placeholder="Describe brevemente tu idea..."></textarea>
+            <span class="field-hint">Entre 10 y 1,000 caracteres.</span>
+          </div>
+          <div class="form-field form-field--full">
+            <label for="archivo">Adjuntar referencia (opcional)</label>
+            <input class="file-input" id="archivo" type="file" accept=".pdf,.png,.jpg,.jpeg">
+            <span class="field-hint">Formatos permitidos: PDF, PNG o JPG. Máximo recomendado: 5 MB.</span>
+          </div>
+          <div class="form-field form-field--full password-demo">
+            <label for="clave">Contraseña temporal (requisito académico)</label>
+            <input id="clave" type="password" minlength="8" maxlength="32" autocomplete="new-password" placeholder="Mínimo 8 caracteres">
+            <span class="field-hint">No ingreses una contraseña real. Este campo solo demuestra validación HTML y no se envía.</span>
+          </div>
+          <div class="form-field form-field--full">
+            <label class="choice choice--terms"><input type="checkbox" required><span>Confirmo que leí las indicaciones y acepto las condiciones de esta demostración. <span aria-hidden="true">*</span></span></label>
+          </div>
+        </div>
+        <button class="button button--primary form-submit" type="submit">Revisar formulario <span aria-hidden="true">↗</span></button>
+        <p class="form-disclaimer">Demostración estática: GitHub Pages no procesa ni guarda este formulario. Los campos personales no se envían; solo la opción de contacto podría aparecer en la URL. La validación del navegador no reemplaza la validación del servidor.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer page-shell">
+    <span>© 2026 Alejandro Renderos</span><span>Hecho con intención <span class="text-accent" aria-hidden="true">✳</span></span><a href="index.html">Volver al inicio <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 780" role="img" aria-labelledby="title description">
+  <title id="title">Ilustración provisional de perfil</title>
+  <desc id="description">Retrato gráfico abstracto con una figura sobre un fondo verde.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9d987"/>
+      <stop offset="1" stop-color="#516a4c"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#293b31"/>
+      <stop offset="1" stop-color="#17251f"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="780" fill="url(#background)"/>
+  <circle cx="565" cy="145" r="95" fill="#d9edb1" opacity=".72"/>
+  <path d="M66 780c18-171 106-267 294-267s276 96 294 267" fill="url(#shirt)"/>
+  <path d="M268 458h184v126c-20 38-53 58-92 58s-72-20-92-58z" fill="#ae7354"/>
+  <ellipse cx="360" cy="329" rx="148" ry="185" fill="#c88c68"/>
+  <path d="M210 326c-27-140 32-234 156-234 125 0 181 87 148 246l-34-91c-78 14-148-5-204-43-13 57-36 95-66 122z" fill="#25352d"/>
+  <path d="M251 334c-17-11-28 1-26 24 3 28 17 45 39 47m192-71c17-11 28 1 26 24-3 28-17 45-39 47" fill="#bd805f"/>
+  <path d="M303 350h19m95 0h-19" fill="none" stroke="#49352d" stroke-linecap="round" stroke-width="8"/>
+  <path d="M335 423c16 12 34 12 50 0" fill="none" stroke="#704637" stroke-linecap="round" stroke-width="7"/>
+  <path d="M312 470c26 26 70 26 96 0" fill="none" stroke="#f0c2a2" stroke-linecap="round" stroke-width="8"/>
+  <path d="M270 584l90 80 90-80 68 196H202z" fill="#d3f36b"/>
+  <path d="M360 664v116" stroke="#a8cd4d" stroke-width="5"/>
+  <path d="M84 112h78M123 73v78" stroke="#f0f5dd" stroke-linecap="round" stroke-width="5" opacity=".7"/>
+</svg>
